@@ -1,18 +1,24 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 export interface ButtonProps {
   body?: {
     title: string;
     desc: string;
+    linkTo: string;
+    img: string;
   };
 }
 
 const CustomButton: React.FC<ButtonProps> = ({ body }) => {
   return (
-    <div className="w-full border rounded p-3 cursor-pointer flex gap-4">
+    <Link
+      to={body?.linkTo || "/"}
+      className="w-full border rounded p-3 cursor-pointer flex gap-4"
+    >
       {/* Image */}
       <Avatar className="rounded-md">
-        <AvatarImage src="https://github.com/shadcn.png" />
+        <AvatarImage src={body?.img} />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
 
@@ -24,7 +30,7 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
         {/* Info */}
         <p className="text-xs text-muted-foreground">{body?.desc}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
