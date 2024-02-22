@@ -22,7 +22,7 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
         <div className="font-700 text-sm">{body?.title}</div>
 
         {/* Info */}
-        <p className="text-sm text-muted-foreground">{body?.desc}</p>
+        <p className="text-xs text-muted-foreground">{body?.desc}</p>
       </div>
     </div>
   );
