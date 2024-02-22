@@ -1,4 +1,5 @@
-import Custom_Button from "./custom-button";
+import CustomButton from "./custom-button";
+import { ButtonInfo } from "@/utils/common";
 
 const SideBar = () => {
   return (
@@ -16,9 +17,8 @@ const SideBar = () => {
 
       {/* Buttons */}
       <div className="flex flex-col gap-2">
-        <Custom_Button />
-        <Custom_Button />
-        <Custom_Button />
+        <CustomButton body={ButtonInfo[0]} />
+        <CustomButton body={ButtonInfo[1]} />
       </div>
     </div>
   );
