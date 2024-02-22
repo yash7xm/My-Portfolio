@@ -1,7 +1,13 @@
+import Project from "@/components/project";
+import Header from "@/components/common/header";
+import Footer from "@/components/common/footer";
+
 const Projects = () => {
   return (
-    <div className="p-3 h-full flex-1">
-      <div className="font-700 uppercase text-sm">Projects</div>
+    <div className="h-full flex-1">
+      <Header />
+      <Project />
+      <Footer />
     </div>
   );
 };

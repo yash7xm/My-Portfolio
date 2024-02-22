@@ -9,7 +9,7 @@ export interface ButtonProps {
 
 const CustomButton: React.FC<ButtonProps> = ({ body }) => {
   return (
-    <div className="w-full border border-slate-800 rounded p-3 cursor-pointer flex gap-4">
+    <div className="w-full border border-slate-200 rounded p-3 cursor-pointer flex gap-4">
       {/* Image */}
       <Avatar className="rounded-md">
         <AvatarImage src="https://github.com/shadcn.png" />

@@ -3,10 +3,10 @@ import { ButtonInfo } from "@/utils/common";
 
 const SideBar = () => {
   return (
-    <div className="p-3 h-full w-1/4 flex flex-col gap-6">
+    <div className="p-3 h-full w-80 flex flex-col gap-6 border border-l border-slate-200">
       <div className="flex flex-col gap-8">
         {/* Name */}
-        <div className="font-700 uppercase text-sm">Yash Poonia</div>
+        <div className="font-700 uppercase text-sm font-mono">Yash Poonia</div>
 
         {/* Info */}
         <p className="text-sm text-muted-foreground">
