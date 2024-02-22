@@ -1,3 +1,4 @@
+import { ModeToggle } from "../mode-toggle";
 import CustomButton from "./custom-button";
 import { ButtonInfo } from "@/utils/common";
 
@@ -20,6 +21,8 @@ const SideBar = () => {
         <CustomButton body={ButtonInfo[0]} />
         <CustomButton body={ButtonInfo[1]} />
       </div>
+
+      <ModeToggle />
     </div>
   );
 };
