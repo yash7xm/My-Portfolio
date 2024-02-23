@@ -10,11 +10,21 @@ const ProjectDetailComponent = () => {
   }
 
   return (
-    <div className="scroll-style h-full overflow-y-scroll p-3">
+    <div className="scroll-style overflow-y-scroll p-3">
+      {/* main image */}
       <div
         className="h-screen w-full bg-contain rounded-md"
         style={{ backgroundImage: `url(${data[idx].images[0]})` }}
       ></div>
+
+      {/* key point descriptions */}
+      <div className="bg-secondary-bg h-3/4 mt-4 rounded-md p-4">
+        {/* heading */}
+        <div className="text-xl uppercase w-4/5 font-mono">
+          <span>{data[idx].name} </span>
+          <span className="text-muted-foreground">{data[idx].description}</span>
+        </div>
+      </div>
     </div>
   );
 };
