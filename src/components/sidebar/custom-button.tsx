@@ -25,7 +25,7 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
       (location.pathname.split("/")[1] == "project" &&
         body?.linkTo.substring(1) == "")
     ) {
-      setBorder("dark: border-white light: border-black");
+      setBorder("dark:border-white light:border-black");
     } else {
       setBorder("");
     }
