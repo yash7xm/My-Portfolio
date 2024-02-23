@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export interface ButtonProps {
   body?: {
@@ -11,10 +12,29 @@ export interface ButtonProps {
 }
 
 const CustomButton: React.FC<ButtonProps> = ({ body }) => {
+  let location = useLocation();
+  const [highlightBorder, setBorder] = useState("");
+
+  useEffect(() => {
+    setBorder(location.pathname.split("/")[1]);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (
+      location.pathname.split("/")[1] == body?.linkTo.substring(1) ||
+      (location.pathname.split("/")[1] == "project" &&
+        body?.linkTo.substring(1) == "")
+    ) {
+      setBorder("dark: border-white light: border-black");
+    } else {
+      setBorder("");
+    }
+  }, [location.pathname, body?.linkTo]);
+
   return (
     <Link
       to={body?.linkTo || "/"}
-      className="w-full border rounded p-3 cursor-pointer flex gap-4"
+      className={`w-full border rounded p-3 cursor-pointer flex gap-4 ${highlightBorder}`}
     >
       {/* Image */}
       <Avatar className="rounded-md">
