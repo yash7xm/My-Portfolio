@@ -5,7 +5,7 @@ type Theme = "dark" | "light" | "system";
 
 const Theme = () => {
   const { setTheme } = useTheme();
-  const [selectedTheme, setSelectedTheme] = useState<Theme>("light");
+  const [selectedTheme, setSelectedTheme] = useState<Theme>("dark");
 
   const handleThemeChange = (theme: Theme) => {
     setTheme(theme);

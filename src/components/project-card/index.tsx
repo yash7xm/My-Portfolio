@@ -1,25 +1,42 @@
 import { MoveRight } from "lucide-react";
 import "../../styles/project-card.css";
 
-const ProjectCard = () => {
+export interface ProjectCardProps {
+  body?: {
+    id: number;
+    img: string;
+    heading: string;
+    subHeading: string;
+    description: string;
+    year: string;
+  };
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ body }) => {
   return (
     <div className="w-full h-[50vh] cursor-pointer">
-      <div className="project-card-image bg-slate-900">
-        <div className="int-image bg-cover bg-center transition duration-300 ease-in-out hover:scale-105"></div>
+      <div className="project-card-image bg-slate-900 h-[80%] rounded-md py-[3%] px-[10%]">
+        <div
+          className="int-image 
+          bg-contain transition duration-300 ease-in-out 
+          hover:scale-105 
+          h-full w-full rounded-md
+          "
+          style={{ backgroundImage: `url(${body?.img})` }}
+        ></div>
       </div>
 
-      <div className="flex h-[20%] items-center text-[0.65rem] w-full">
-        <div className="w-[30%]">
-          <div className="uppercase">Vyzon</div>
-          <div className="text-muted-foreground">Programming Language</div>
+      <div className="flex h-[20%] items-center text-[0.65rem] w-full px-2">
+        <div className="w-[20%]">
+          <div className="uppercase">{body?.heading}</div>
+          <div className="text-muted-foreground">{body?.subHeading}</div>
         </div>
 
-        <div className="text-muted-foreground font-mono w-[58%]">
-          Crafted a dynamic programming language: Revolutionizing programming
-          with Vyzon
+        <div className="text-muted-foreground font-mono w-[68%] px-1">
+          <i>{body?.description}</i>
         </div>
         <div className="w-[12%] flex justify-between pr-2">
-          <span>2023</span>
+          <span>{body?.year}</span>
           <span className="text-muted-foreground">
             <MoveRight size={12} />
           </span>
