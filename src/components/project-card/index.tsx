@@ -15,7 +15,7 @@ export interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ body }) => {
   return (
     <div className="group w-full h-[50vh] cursor-pointer">
-      <div className="project-card-image bg-secondary-bg h-[80%] rounded-md py-[3%] px-[10%]">
+      <div className="project-card-image dark:bg-secondary-bg bg-sec h-[80%] rounded-md py-[3%] px-[10%]">
         <div
           className="int-image 
           bg-contain transition duration-300 ease-in-out 

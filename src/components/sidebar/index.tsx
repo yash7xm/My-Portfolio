@@ -5,12 +5,12 @@ import Theme from "./theme";
 const SideBar = () => {
   return (
     <div className="p-3 h-full w-80 flex flex-col gap-6 border-r relative">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 font-mono">
         {/* Name */}
-        <div className="font-700 uppercase text-sm font-mono">Yash Poonia</div>
+        <div className="font-700 uppercase text-sm">Yash Poonia</div>
 
         {/* Info */}
-        <p className="text-sm text-muted-foreground">
+        <p className="text-[0.8rem] dark:text-[#FFFFFFB3] text-[#303030B3]">
           Passionate computer engineering student excelling in programming, web
           development, and software engineering.
         </p>
