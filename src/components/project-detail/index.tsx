@@ -15,7 +15,7 @@ const ProjectDetailComponent = () => {
       <div className="h-screen w-full flex items-center justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
         <div
           className="h-4/5 w-4/5 bg-contain rounded-md"
-          style={{ backgroundImage: `url(${data[idx].images[0]})` }}
+          style={{ backgroundImage: `url(${data[idx].mainImage})` }}
         ></div>
       </div>
 
@@ -27,7 +27,7 @@ const ProjectDetailComponent = () => {
           <span className="text-muted-foreground">{data[idx].description}</span>
         </div>
 
-        {/* bottom-stuff */}
+        {/* summary-techstack-links */}
         <div className="grid grid-cols-3 gap-8 font-mono">
           <div>
             <div className="mb-3 uppercase text-sm">Summary</div>
@@ -50,6 +50,31 @@ const ProjectDetailComponent = () => {
           </div>
         </div>
       </div>
+
+      {/* project-info */}
+      {data[idx].projectInfo.map((info, index) => (
+        <div key={index}>
+          <div className="h-screen w-full flex items-center mt-4 justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
+            <div
+              className="h-4/5 w-4/5 bg-contain rounded-md"
+              style={{ backgroundImage: `url(${info.url})` }}
+            ></div>
+          </div>
+          <div className="h-fit py-24 w-full flex justify-end pr-24">
+            <div className="w-2/5 flex flex-col gap-3">
+              <div className="text-lg uppercase">{info.head}</div>
+              {info.body.map((bdy, index) => (
+                <div
+                  key={index}
+                  className="font-mono text-xs text-start dark:text-[#FFFFFFB3] text-[#303030B3]"
+                >
+                  {bdy}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
