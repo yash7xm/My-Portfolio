@@ -10,12 +10,13 @@ export const ProjectDetailInfo = [
     name: "Vyzon",
     description:
       "IS A VERSATILE AND CUSTOM-TAILORED PROGRAMMING LANGUAGE DESIGNED TO PROVIDE CODERS WITH THE FREEDOM TO SHAPE THEIR CODING EXPERIENCES.",
-    body: "Designed a custom programming language, built an interpreter, and developed language-processing tools, showcasing languagedevelopment expertise.",
+    summary:
+      "Designed a custom programming language, built an interpreter, and developed language-processing tools, showcasing languagedevelopment expertise.",
     gitLink: "/",
     webLink: "/",
-    techStack: ["JavaScript, React"],
-    projectInfo: [
-        
-    ]
+    techStack: [
+      "JavaScript, React, Interpreter, Tokenizer, Parser, Code Generator",
+    ],
+    projectInfo: [],
   },
 ];
