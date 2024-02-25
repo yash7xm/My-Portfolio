@@ -4,7 +4,7 @@ import ProjectDetailComponent from "@/components/project-detail";
 const ProjectDetail = () => {
   return (
     <div className="h-full flex flex-col">
-      <Header projectDetailActive={true} />
+      <Header headerType={"Project Detail"} />
       <ProjectDetailComponent />
     </div>
   );
