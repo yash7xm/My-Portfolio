@@ -1,16 +1,16 @@
 const AboutComp = () => {
   return (
-    <div className="flex-1 p-3 flex h-full">
+    <div className="p-3 flex h-[86.5%] gap-4">
       {/* My Image */}
       <div className="w-2/5 bg-sec dark:bg-secondary-bg rounded-md p-3 h-full overflow-y-scroll border overflow-x-hidden scroll-style">
-        <div className="h-[70%]">
+        <div className="h-[75%]">
           <img
             className="rounded-md h-full"
             src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700918211/IMG_20230703_213438_303_vvyxvf.jpg"
             alt="yash poonia"
           />
         </div>
-        <div className="h-[30%] font-mono my-2">
+        <div className="h-[25%] font-mono my-2">
           <div className="text-sm font-medium uppercase mb-3">
             Hi, I'm Yash 👋🏼
           </div>
@@ -34,7 +34,99 @@ const AboutComp = () => {
       </div>
 
       {/* Basic Info */}
-      <div></div>
+      <div className="w-[60%] rounded-md overflow-y-scroll overflow-x-hidden scroll-style px-1">
+        {/* Education */}
+        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
+          <div className="text-sm mb-3 uppercase">Education</div>
+          <div className="text-[0.7rem]">2021 - 2025</div>
+          <div className="text-[0.7rem]">
+            ↳ Computer science and engineering
+          </div>
+          {/* <div className="bdy">2019 - 2020</div>
+          <div className="bdy">↳ Class 12 (CBSE)</div>
+          <div className="bdy mrb">↳ 90.8%</div>
+          <div className="bdy">2017 - 2018</div>
+          <div className="bdy">↳ Class 10 (CBSE)</div>
+          <div className="bdy mrb">↳ 93.4%</div> */}
+        </div>
+
+        {/* Skills */}
+        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
+          <div className="text-sm mb-3 uppercase">Skills</div>
+          <div className="flex justify-between text-[0.7rem]">
+            <div>
+              <div className="mb-1">Programming Languages</div>
+              <div>↳ JavaScript</div>
+              <div>↳ Java</div>
+              <div>↳ Python</div>
+              <div>↳ TypeScript</div>
+              <div>↳ C++</div>
+              <div>↳ C</div>
+            </div>
+            <div>
+              <div className="mb-1">Web Technologies</div>
+              <div>↳ Node.js</div>
+              <div>↳ Express.js</div>
+              <div>↳ React</div>
+              <div>↳ Redux</div>
+              <div>↳ MongoDB</div>
+              <div>↳ SQL</div>
+              <div>↳ Docker</div>
+              <div>↳ AWS</div>
+            </div>
+            <div>
+              <div className="mb-1">Tools</div>
+              <div>↳ Git</div>
+              <div>↳ Github</div>
+              <div>↳ Figma</div>
+            </div>
+            <div>
+              <div className="mb-1">Core</div>
+              <div>↳ Operating System</div>
+              <div>↳ Database Management System</div>
+              <div>↳ Linux</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact */}
+        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
+          <div className="text-sm mb-3 uppercase">Contact</div>
+          <a href="https://github.com/yash7xm" className="text-xs">
+            ↳ github.com/yash7xm
+          </a>
+          <div></div>
+          <a href="https://twitter.com/Yash_Poonia_" className="text-xs">
+            ↳ twitter.com/Yash_Poonia_
+          </a>
+          <div></div>
+          <a href="https://www.linkedin.com/in/YashPoonia" className="text-xs">
+            ↳ linkedin.com/in/YashPoonia
+          </a>
+          <div></div>
+          <a href="https://leetcode.com/Yash_7xm/" className="text-xs">
+            ↳ leetcode.com/Yash_7xm/
+          </a>
+        </div>
+
+        {/* Achievements */}
+        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
+          <div className="text-xs">ACHIEVEMENTS</div>
+          <div className="text-[0.7rem]">
+            ↳ Created a custom programming language.
+          </div>
+          <div className="text-[0.7rem]">
+            ↳ Developed an interpreter for the custom programming language.
+          </div>
+          <div className="text-[0.7rem]">
+            ↳ Solved over 500+ coding challenges on various platforms,
+            showcasing expertise in problem-solving.
+          </div>
+          <div className="text-[0.7rem]">
+            ↳ Secured victory in multiple coding competitions.
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

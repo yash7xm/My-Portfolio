@@ -1,4 +1,5 @@
 import AboutComp from "@/components/about";
+import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
     <div className="flex flex-col h-screen">
       <Header headerType={"About"} />
       <AboutComp />
+      <Footer />
     </div>
   );
 };
