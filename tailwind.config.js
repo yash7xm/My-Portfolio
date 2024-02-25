@@ -53,7 +53,7 @@ module.exports = {
         },
         "primary-bg": "#141414",
         "secondary-bg": "#1c1c1c",
-        "sec": "#33333312",
+        sec: "#33333312",
       },
       borderRadius: {
         lg: "var(--radius)",

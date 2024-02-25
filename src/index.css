@@ -77,7 +77,7 @@
 
 @layer components {
   .scroll-style::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
     background-color: rgba(255, 255, 255, 0.06);
   }
 
