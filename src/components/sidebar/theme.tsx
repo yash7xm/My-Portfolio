@@ -1,11 +1,21 @@
 import { useTheme } from "@/components/common/theme-provider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
 
 const Theme = () => {
   const { setTheme } = useTheme();
   const [selectedTheme, setSelectedTheme] = useState<Theme>("system");
+
+  useEffect(() => {
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light"
+
+    setSelectedTheme(systemTheme);
+    setTheme(systemTheme);
+  }, []);
 
   const handleThemeChange = (theme: Theme) => {
     setTheme(theme);
@@ -22,7 +32,7 @@ const Theme = () => {
       >
         Dark
       </span>
-      <span className="text-muted-foreground"> / </span>
+      <span className="text-muted-foreground mx-1">/</span>
       <span
         className={`cursor-pointer ${
           selectedTheme === "light" ? "text-dark" : "text-muted-foreground"
@@ -30,15 +40,6 @@ const Theme = () => {
         onClick={() => handleThemeChange("light")}
       >
         Light
-      </span>
-      <span className="text-muted-foreground"> / </span>
-      <span
-        className={`cursor-pointer ${
-          selectedTheme === "system" ? "text-dark" : "text-muted-foreground"
-        }`}
-        onClick={() => handleThemeChange("system")}
-      >
-        System
       </span>
     </div>
   );
