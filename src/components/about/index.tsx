@@ -1,9 +1,10 @@
 const AboutComp = () => {
   return (
-    <div className="p-3 flex h-[86.5%] gap-4 w-full flex-col md:flex-row">
+    <div className="p-3 md:flex md:gap-4 w-full overflow-y-scroll">
       {/* My Image */}
       <div
-        className="md:w-2/5 w-full bg-sec dark:bg-secondary-bg rounded-md p-3 h-full overflow-y-scroll border overflow-x-hidden scroll-style *:
+        className="md:w-2/5 w-full bg-sec dark:bg-secondary-bg 
+        rounded-md p-3 md:overflow-y-scroll border overflow-x-hidden md:scroll-style mb-3
       "
       >
         <div className="h-[75%]">
@@ -37,7 +38,7 @@ const AboutComp = () => {
       </div>
 
       {/* Basic Info */}
-      <div className="md:w-[60%] w-full h-fit rounded-md overflow-y-scroll overflow-x-hidden scroll-style px-1">
+      <div className="md:w-[60%] w-full rounded-md md:overflow-y-scroll overflow-x-hidden scroll-style md:px-1">
         {/* Education */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
           <div className="text-sm mb-3 uppercase">Education</div>

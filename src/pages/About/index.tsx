@@ -4,7 +4,7 @@ import Header from "@/components/common/header";
 
 const About = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-full">
       <Header headerType={"About"} />
       <AboutComp />
       <Footer />
