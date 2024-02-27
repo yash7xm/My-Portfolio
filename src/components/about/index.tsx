@@ -1,8 +1,11 @@
 const AboutComp = () => {
   return (
-    <div className="p-3 flex h-[86.5%] gap-4">
+    <div className="p-3 flex h-[86.5%] gap-4 w-full flex-col md:flex-row">
       {/* My Image */}
-      <div className="w-2/5 bg-sec dark:bg-secondary-bg rounded-md p-3 h-full overflow-y-scroll border overflow-x-hidden scroll-style">
+      <div
+        className="md:w-2/5 w-full bg-sec dark:bg-secondary-bg rounded-md p-3 h-full overflow-y-scroll border overflow-x-hidden scroll-style *:
+      "
+      >
         <div className="h-[75%]">
           <img
             className="rounded-md h-full"
@@ -34,7 +37,7 @@ const AboutComp = () => {
       </div>
 
       {/* Basic Info */}
-      <div className="w-[60%] rounded-md overflow-y-scroll overflow-x-hidden scroll-style px-1">
+      <div className="md:w-[60%] w-full h-fit rounded-md overflow-y-scroll overflow-x-hidden scroll-style px-1">
         {/* Education */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
           <div className="text-sm mb-3 uppercase">Education</div>
@@ -53,7 +56,7 @@ const AboutComp = () => {
         {/* Skills */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
           <div className="text-sm mb-3 uppercase">Skills</div>
-          <div className="flex justify-between text-[0.7rem]">
+          <div className="flex flex-col gap-4 justify-between text-[0.7rem] md:flex-row">
             <div>
               <div className="mb-1">Programming Languages</div>
               <div>↳ JavaScript</div>
@@ -111,7 +114,7 @@ const AboutComp = () => {
 
         {/* Achievements */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
-          <div className="text-xs">ACHIEVEMENTS</div>
+          <div className="text-xs mb-3 uppercase">ACHIEVEMENTS</div>
           <div className="text-[0.7rem]">
             ↳ Created a custom programming language.
           </div>
@@ -119,7 +122,7 @@ const AboutComp = () => {
             ↳ Developed an interpreter for the custom programming language.
           </div>
           <div className="text-[0.7rem]">
-            ↳ Solved over 500+ coding challenges on various platforms,
+            ↳ Solved over 1000+ coding challenges on various platforms,
             showcasing expertise in problem-solving.
           </div>
           <div className="text-[0.7rem]">
