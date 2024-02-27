@@ -9,7 +9,7 @@ const Layout = ({ children }: any) => {
     <div className="h-screen flex overflow-hidden bg-white dark:bg-primary-bg relative">
       {/* Sidebar */}
       <div
-        className="w-full md:w-[300px] -z-1 md:flex absolute h-full"
+        className="w-full md:w-[300px] -z-1 md:flex absolute md:relative h-full"
         style={{
           display: showSideBar ? "flex" : "none",
           zIndex: showSideBar ? "10" : "-1",
@@ -19,7 +19,9 @@ const Layout = ({ children }: any) => {
       </div>
 
       {/* Main Content */}
-      <div className="h-screen w-full md:flex-1 z-1 absolute">{children}</div>
+      <div className="h-screen w-full md:flex-1 z-1 absolute md:relative">
+        {children}
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ type Theme = "dark" | "light" | "system";
 
 const Theme = () => {
   const { setTheme } = useTheme();
-  const [selectedTheme, setSelectedTheme] = useState<Theme>("dark");
+  const [selectedTheme, setSelectedTheme] = useState<Theme>("system");
 
   const handleThemeChange = (theme: Theme) => {
     setTheme(theme);
@@ -30,6 +30,15 @@ const Theme = () => {
         onClick={() => handleThemeChange("light")}
       >
         Light
+      </span>
+      <span className="text-muted-foreground"> / </span>
+      <span
+        className={`cursor-pointer ${
+          selectedTheme === "system" ? "text-dark" : "text-muted-foreground"
+        }`}
+        onClick={() => handleThemeChange("system")}
+      >
+        System
       </span>
     </div>
   );

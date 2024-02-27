@@ -1,10 +1,10 @@
 const AboutComp = () => {
   return (
-    <div className="p-3 md:flex md:gap-4 w-full overflow-y-scroll">
+    <div className="p-3 lg:flex lg:gap-4 w-full overflow-y-scroll lg:overflow-hidden scroll-style">
       {/* My Image */}
       <div
-        className="md:w-2/5 w-full bg-sec dark:bg-secondary-bg 
-        rounded-md p-3 md:overflow-y-scroll border overflow-x-hidden md:scroll-style mb-3
+        className="lg:w-2/5 w-full bg-sec dark:bg-secondary-bg 
+        rounded-md p-3 lg:overflow-y-scroll border overflow-x-hidden lg:scroll-style mb-3
       "
       >
         <div className="h-[75%]">
@@ -38,7 +38,7 @@ const AboutComp = () => {
       </div>
 
       {/* Basic Info */}
-      <div className="md:w-[60%] w-full rounded-md md:overflow-y-scroll overflow-x-hidden scroll-style md:px-1">
+      <div className="lg:w-[60%] w-full rounded-md lg:overflow-y-scroll overflow-x-hidden scroll-style lg:px-1">
         {/* Education */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
           <div className="text-sm mb-3 uppercase">Education</div>
@@ -57,7 +57,7 @@ const AboutComp = () => {
         {/* Skills */}
         <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
           <div className="text-sm mb-3 uppercase">Skills</div>
-          <div className="flex flex-col gap-4 justify-between text-[0.7rem] md:flex-row">
+          <div className="flex flex-col gap-4 justify-between text-[0.7rem] lg:flex-row">
             <div>
               <div className="mb-1">Programming Languages</div>
               <div>↳ JavaScript</div>
