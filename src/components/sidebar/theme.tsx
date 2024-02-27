@@ -13,7 +13,7 @@ const Theme = () => {
   };
 
   return (
-    <div className="uppercase font-400 font-mono text-xs border-t bottom-0 absolute w-full left-0 p-3">
+    <div className="hidden md:flex uppercase font-400 font-mono text-xs border-t bottom-0 absolute w-full left-0 p-3">
       <span
         className={`cursor-pointer ${
           selectedTheme === "dark" ? "text-dark" : "text-muted-foreground"

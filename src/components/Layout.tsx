@@ -12,7 +12,7 @@ const Layout = ({ children }: any) => {
         className="w-full md:w-[300px] -z-1 md:flex absolute h-full"
         style={{
           display: showSideBar ? "flex" : "none",
-          zIndex: showSideBar ? "100" : "-1",
+          zIndex: showSideBar ? "10" : "-1",
         }}
       >
         <SideBar />
