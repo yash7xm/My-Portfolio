@@ -5,16 +5,10 @@ type Theme = "dark" | "light" | "system";
 
 const Theme = () => {
   const { setTheme } = useTheme();
-  const [selectedTheme, setSelectedTheme] = useState<Theme>("system");
+  const [selectedTheme, setSelectedTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-    .matches
-    ? "dark"
-    : "light"
-
-    setSelectedTheme(systemTheme);
-    setTheme(systemTheme);
+    setTheme("dark");
   }, []);
 
   const handleThemeChange = (theme: Theme) => {
