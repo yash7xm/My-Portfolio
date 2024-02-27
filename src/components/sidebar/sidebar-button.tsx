@@ -1,6 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useAtom } from "jotai";
+import { sidebarAtom } from "@/atom/sidebar-atom";
 
 export interface ButtonProps {
   body?: {
@@ -12,6 +14,8 @@ export interface ButtonProps {
 }
 
 const CustomButton: React.FC<ButtonProps> = ({ body }) => {
+  const [showSideBar, setShowSideBar] = useAtom<boolean>(sidebarAtom);
+
   let location = useLocation();
   const [highlightBorder, setBorder] = useState("");
 
@@ -35,6 +39,7 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
     <Link
       to={body?.linkTo || "/"}
       className={`w-full border rounded p-3 cursor-pointer flex gap-4 ${highlightBorder}`}
+      onClick={() => setShowSideBar(!showSideBar)}
     >
       {/* Image */}
       <Avatar className="rounded-md">

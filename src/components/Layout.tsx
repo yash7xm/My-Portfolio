@@ -1,15 +1,25 @@
 import SideBar from "./sidebar";
+import { useAtomValue } from "jotai";
+import { sidebarAtom } from "@/atom/sidebar-atom";
 
 const Layout = ({ children }: any) => {
+  const showSideBar = useAtomValue<boolean>(sidebarAtom);
 
   return (
-    <div className="h-screen flex overflow-hidden bg-white dark:bg-primary-bg">
-      <div className="w-full md:w-[300px] -z-1 hidden md:flex">
+    <div className="h-screen flex overflow-hidden bg-white dark:bg-primary-bg relative">
+      {/* Sidebar */}
+      <div
+        className="w-full md:w-[300px] -z-1 md:flex absolute h-full"
+        style={{
+          display: showSideBar ? "flex" : "none",
+          zIndex: showSideBar ? "100" : "-1",
+        }}
+      >
         <SideBar />
       </div>
-      <div className="h-screen relative w-full md:flex-1 z-1)">
-        {children}
-      </div>
+
+      {/* Main Content */}
+      <div className="h-screen w-full md:flex-1 z-1 absolute">{children}</div>
     </div>
   );
 };
