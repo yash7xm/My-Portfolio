@@ -12,7 +12,7 @@ const ProjectDetailComponent = () => {
   return (
     <div className="scroll-style overflow-y-scroll p-3 h-full">
       {/* main image */}
-      <div className="h-2/5 md:h-full w-full flex items-center justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
+      <div className="h-2/5 md:h-3/5 sm:max-md:h-4/5 lg:h-full w-full flex items-center justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
         <div className="size-4/5 rounded-md">
           <img
             className="rounded-md size-full"
@@ -23,9 +23,9 @@ const ProjectDetailComponent = () => {
       </div>
 
       {/* key point descriptions */}
-      <div className="dark:bg-secondary-bg bg-sec h-fit md:h-3/5 mt-4 rounded-md p-4 flex flex-col justify-between">
+      <div className="dark:bg-secondary-bg bg-sec h-fit lg:h-3/5 mt-4 rounded-md p-4 flex flex-col justify-between">
         {/* heading */}
-        <div className="text-xl uppercase w-full md:w-4/5 font-mono mb-20 md:mb-0">
+        <div className="text-xl uppercase w-full md:w-4/5 font-mono mb-20 lg:mb-0">
           <span>{data[idx].name} </span>
           <span className="text-muted-foreground">{data[idx].description}</span>
         </div>
@@ -69,8 +69,8 @@ const ProjectDetailComponent = () => {
           </div>
 
           {/* text */}
-          <div className="h-fit p-3 md:py-24 w-full md:flex justify-end md:pr-24 my-4">
-            <div className="md:w-2/5 flex flex-col gap-3">
+          <div className="h-fit p-3 md:py-24 w-full md:flex md:justify-center lg:justify-end md:pr-24 my-4">
+            <div className="lg:w-2/5 md:w-4/5 flex flex-col gap-3">
               <div className="text-lg uppercase">{info.head}</div>
               {info.body.map((bdy, index) => (
                 <div
