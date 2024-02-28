@@ -4,6 +4,7 @@ import Theme from "./theme";
 import { useSetAtom } from "jotai";
 import { sidebarAtom } from "@/atom/sidebar-atom";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const setShowSideBar = useSetAtom<any>(sidebarAtom);
@@ -27,7 +28,9 @@ const SideBar = () => {
     >
       <div className="md:flex-col md:gap-8 font-mono hidden md:flex">
         {/* Name */}
-        <div className="font-700 uppercase text-sm">Yash Poonia</div>
+        <Link to="/">
+          <div className="font-700 uppercase text-sm">Yash Poonia</div>
+        </Link>
 
         {/* Info */}
         <p className="text-[0.8rem]">
