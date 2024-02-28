@@ -1,16 +1,16 @@
 import CustomButton from "./sidebar-button";
 import { ButtonInfo } from "@/utils/common";
 import Theme from "./theme";
-import { useAtom } from "jotai";
+import { useSetAtom } from "jotai";
 import { sidebarAtom } from "@/atom/sidebar-atom";
 import { useEffect } from "react";
 
 const SideBar = () => {
-  const [showSideBar, setShowSideBar] = useAtom<boolean>(sidebarAtom);
+  const setShowSideBar = useSetAtom<any>(sidebarAtom);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowSideBar(window.innerWidth >= 760);
+      setShowSideBar(window.innerWidth >= 768);
     };
 
     handleResize();
@@ -25,7 +25,7 @@ const SideBar = () => {
       className="md:p-3 px-8 h-full w-full md:border-r relative bg-white dark:bg-primary-bg
                  flex flex-col gap-6 justify-center md:justify-start"
     >
-      <div className="md:flex-col md:gap-8 font-mono hidden lg:flex">
+      <div className="md:flex-col md:gap-8 font-mono hidden md:flex">
         {/* Name */}
         <div className="font-700 uppercase text-sm">Yash Poonia</div>
 

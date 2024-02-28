@@ -114,7 +114,7 @@ const AboutComp = () => {
         </div>
 
         {/* Achievements */}
-        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3">
+        <div className="bg-sec dark:bg-secondary-bg border p-3 rounded-md font-mono mb-3 space-y-2">
           <div className="text-xs mb-3 uppercase">ACHIEVEMENTS</div>
           <div className="text-[0.7rem]">
             ↳ Created a custom programming language.
