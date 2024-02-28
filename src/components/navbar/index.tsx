@@ -1,4 +1,4 @@
-import { Menu, Sun } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { useAtom } from "jotai";
 import { sidebarAtom } from "@/atom/sidebar-atom";
 import { useTheme } from "@/components/common/theme-provider";
@@ -8,13 +8,17 @@ type Theme = "dark" | "light" | "system";
 
 const NavBar = () => {
   const [showSideBar, setShowSideBar] = useAtom<boolean>(sidebarAtom);
-  const { setTheme } = useTheme();
-  const [selectedTheme, setSelectedTheme] = useState<Theme>("system");
-  const [currentTheme, setCurrentTheme] = useState<Theme>("system");
+  const { theme, setTheme } = useTheme();
+  const [selectedTheme, setSelectedTheme] = useState<Theme>(theme);
 
   const handleThemeChange = () => {
-    // setTheme(theme);
-    // setSelectedTheme(theme);
+    if (theme == "dark") {
+      setTheme("light");
+      setSelectedTheme("light");
+    } else {
+      setTheme("dark");
+      setSelectedTheme("dark");
+    }
   };
 
   return (
@@ -23,19 +27,20 @@ const NavBar = () => {
       <div>Yash Poonia</div>
 
       {/* theme, menu */}
-      <div className="flex gap-4">
+      <div className="flex gap-6">
         {/* theme */}
-        <div onClick={() => handleThemeChange()}>
-          <Sun />
+        <div className="cursor-pointer" onClick={() => handleThemeChange()}>
+          {selectedTheme == "dark" ? <Moon /> : <Sun />}
         </div>
 
         {/* menu */}
-        <div>
-          <Menu
-            onClick={() => {
-              setShowSideBar(!showSideBar);
-            }}
-          />
+        <div
+          className="cursor-pointer"
+          onClick={() => {
+            setShowSideBar(!showSideBar);
+          }}
+        >
+          {showSideBar ? <X /> : <Menu />}
         </div>
       </div>
     </div>
