@@ -19,6 +19,13 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
   let location = useLocation();
   const [highlightBorder, setBorder] = useState("");
 
+  function handleShowSidebar() {
+    if(window.innerWidth < 768){
+      setShowSideBar(!showSideBar);
+    }
+    return;
+  }
+
   useEffect(() => {
     setBorder(location.pathname.split("/")[1]);
   }, [location.pathname]);
@@ -39,7 +46,7 @@ const CustomButton: React.FC<ButtonProps> = ({ body }) => {
     <Link
       to={body?.linkTo || "/"}
       className={`w-full border rounded p-3 cursor-pointer flex gap-4 ${highlightBorder}`}
-      onClick={() => setShowSideBar(!showSideBar)}
+      onClick={handleShowSidebar}
     >
       {/* Image */}
       <Avatar className="rounded-md">
