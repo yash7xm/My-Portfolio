@@ -7,7 +7,7 @@ const Header = ({ headerType }: any) => {
     <div className="text-center md:text-start p-3 font-mono font-700 uppercase text-xs md:border-b stretch">
       {headerType == "Project Detail" ? (
         <div
-          className="flex justify-center md:justify-start items-center gap-2 w-fit cursor-pointer"
+          className="flex mx-auto md:mx-0 md:justify-start items-center gap-2 w-fit cursor-pointer"
           onClick={() => navigate(-1)}
         >
           <span>
