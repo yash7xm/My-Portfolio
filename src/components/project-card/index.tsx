@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ body }) => {
     <div className="group w-full h-[50vh] cursor-pointer">
       <div
         className="project-card-image dark:bg-secondary-bg bg-sec h-[80%] rounded-md 
-                      p-10 md:py-[3%] md:px-[10%]"
+                      p-10 md:py-[3%] md:px-[10%] sm:max-md:py-2 sm:max-md:px-[20%]"
       >
         <div
           className="int-image 
@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ body }) => {
           "
         >
           <img
-            className="rounded-md h-full"
+            className="rounded-md size-full"
             src={body?.img}
             alt="project image"
           ></img>
@@ -40,10 +40,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ body }) => {
           <div className="text-muted-foreground">{body?.subHeading}</div>
         </div>
 
-        <div className="text-muted-foreground font-mono md:w-[68%] px-1 hidden">
+        <div className="text-muted-foreground font-mono md:w-[68%] px-1 hidden md:flex">
           <i>{body?.description}</i>
         </div>
-        <div className="md:w-[12%] flex justify-between pr-2 relative">
+        <div className="md:w-[12%] flex justify-between pr-2 relative items-center">
           <span className="absolute right-0 transition-all duration-200 ease-linear group-hover:right-5">
             {body?.year}
           </span>
