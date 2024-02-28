@@ -3,7 +3,7 @@ const sepratorStyle = "text-muted-foreground mx-2";
 
 const Footer = () => {
   return (
-    <div className="p-3 font-mono font-700 uppercase text-xs border-t">
+    <div className="p-3 font-mono font-700 uppercase text-xs md:border-t text-center md:text-start w-full">
       <span className={textStyle}>Email</span>
       <span className={sepratorStyle}>/</span>
       <span className={textStyle}>Linkedin</span>
