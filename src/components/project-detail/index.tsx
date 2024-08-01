@@ -59,7 +59,7 @@ const ProjectDetailComponent = () => {
         <div key={index} className="h-fit my-8">
           {/* image */}
           <div className="h-2/5 md:h-full w-full flex items-center mt-4 justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
-            <div className="size-full md:size-4/5 bg-contain rounded-md">
+            <div className="size-full md:size-4/5 bg-contain rounded-md py-1">
               <img
                 className="rounded-md size-full"
                 src={info.url}
