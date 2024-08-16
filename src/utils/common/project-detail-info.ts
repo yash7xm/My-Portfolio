@@ -135,4 +135,55 @@ export const ProjectDetailInfo = [
       },
     ],
   },
+  {
+    mainImage:
+      "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1708688629/flights_bnjuqh.jpg",
+    videos: [
+      "https://framerusercontent.com/images/0L4ByzyLonZaaYGw9F7w0kkuEo.gif",
+    ],
+    name: "Flights",
+    description:
+      "Scalable Microservice Architecture for Seamless User Experience",
+    summary:
+      "A microservice-based flight booking system with secure APIs, efficient booking management, real-time flight data, and automated customer notifications for a seamless user experience.",
+    gitLink: "/",
+    webLink: "/",
+    techStack: [
+      "Microservices, SQL Transactions, Cron Jobs, Idempotency Keys, Message Queue, Docker, AWS",
+    ],
+    projectInfo: [
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723793156/flights_iszct2.png",
+        head: "Flights Service",
+        body: [
+          "The Flights_Service is responsible for managing flight schedules, availability, and pricing. It interacts with external providers to keep this data up-to-date and handles complex logic related to fare classes and dynamic pricing. The service is built for scalability, ensuring quick data processing and high availability, so users always have access to accurate flight information.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723793186/DALL_E_2024-08-16_12.32.58_-_A_professional_and_sleek_image_representing_a_microservice_architecture_component_called_Flights_Api_Gateway._The_image_should_include_a_central_hub_o_o5i5py.webp",
+        head: "API GATEWAY",
+        body: [
+          "The Flights_Api_Gateway acts as the central entry point for all client requests, efficiently routing them to the appropriate microservices. It ensures security with features like authentication, authorization, and rate limiting, protecting the system from unauthorized access. Additionally, the gateway supports load balancing, ensuring that the system remains responsive even under heavy traffic. It also manages API versioning, allowing the system to evolve without disrupting client integrations.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723793125/21420_sa73gc.jpg",
+        head: "Booking Service",
+        body: [
+          "The Flights_Booking_Service manages the entire booking process, from flight search to seat selection and payment. It handles high transaction volumes and integrates seamlessly with payment gateways, offering secure and efficient payment options. The service ensures data integrity, preventing conflicts like double bookings, and includes comprehensive error-handling mechanisms to address any issues that arise during the booking process.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723793085/11119997_laq1ia.jpg",
+        head: "Notification",
+        body: [
+          "The Notification Service ensures effective communication with customers, sending booking confirmations, flight updates, and reminders via email, SMS, or push notifications. It integrates with other services to trigger timely notifications based on specific events. The service is designed to handle high message volumes and includes retry mechanisms to ensure that notifications are delivered successfully.",
+        ],
+      },
+    ],
+  },
 ];

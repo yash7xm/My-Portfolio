@@ -60,6 +60,7 @@ const AboutComp = () => {
           <div className="flex flex-col gap-4 justify-between text-[0.7rem] lg:flex-row">
             <div>
               <div className="mb-1">Programming Languages</div>
+              <div>↳ Go</div>
               <div>↳ JavaScript</div>
               <div>↳ Java</div>
               <div>↳ Python</div>
@@ -88,6 +89,7 @@ const AboutComp = () => {
               <div className="mb-1">Core</div>
               <div>↳ Operating System</div>
               <div>↳ Database Management System</div>
+              <div>↳ Distributed Systems</div>
               <div>↳ Linux</div>
             </div>
           </div>
