@@ -186,4 +186,32 @@ export const ProjectDetailInfo = [
       },
     ],
   },
+  {
+    mainImage:
+      "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723900733/slcak1_di5mrh.jpg",
+    videos: [
+      "https://framerusercontent.com/images/0L4ByzyLonZaaYGw9F7w0kkuEo.gif",
+    ],
+    name: "Commune",
+    description: "Scalable Real-Time Chat: Enterprise Communication Reinvented",
+    summary:
+      "Developed an enterprise-level chat application with real-time messaging, leveraging a robust architecture that includes API servers, WebSocket servers, Redis Pub/Sub, and Kafka, ensuring scalability, reliability, and secure communication.",
+    gitLink: "https://github.com/yash7xm/Commune.git",
+    webLink: "https://github.com/yash7xm/Commune-backend.git",
+    techStack: [
+      "React, Mongo DB, TypeScript, NodeJS, ExpressJS, WebSocket, MERN, NGINX, Kafka, Redis",
+    ],
+    projectInfo: [
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723897393/Portfolio_6_jhe40j.png",
+        head: "Architecture",
+        body: [
+          "I developed an enterprise-level chat application, similar to Slack, designed to support high concurrency and ensure seamless, real-time communication across teams. The architecture was meticulously crafted to prioritize both scalability and reliability, ensuring that the system could handle the demands of a dynamic and growing user base. The messaging flow was designed to be robust, where each message is first routed through API servers, securely saved in the database, and only then transmitted to WebSocket servers for real-time synchronization across all connected clients. This ensures that every message is reliably delivered and reflected instantly.",
+          "To handle scalability and ensure consistent performance, I employed NGINX for load balancing, effectively distributing incoming traffic across multiple servers. Additionally, I utilized Redis Pub/Sub to scale the WebSocket servers, allowing the application to manage an increasing number of concurrent users without compromising on speed or efficiency. This setup was crucial in maintaining a responsive and stable user experience, even under heavy loads.",
+          "For message delivery, I integrated Kafka into the system. Kafka’s asynchronous messaging capabilities ensured that messages were delivered reliably, with fault tolerance built into the system. This means that even during peak traffic, no messages would be lost, and the system would continue to function smoothly. The application also features full authentication and authorization, safeguarding data and ensuring that only authorized users have access to specific channels and information, which is critical for maintaining security in an enterprise environment.",
+        ],
+      },
+    ],
+  },
 ];

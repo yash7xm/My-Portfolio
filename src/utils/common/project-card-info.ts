@@ -25,4 +25,13 @@ export const projectCardInfo = [
       "Monolithic | Mongo DB | EJS | Algorithms | JavaScript | Full Stack | NodeJS",
     year: "2023",
   },
+  {
+    id: 3,
+    img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723900733/slcak1_di5mrh.jpg",
+    heading: "Commune",
+    subHeading: "Chat App",
+    description:
+      "React | Mongo DB | TypeScript | NodeJS | ExpressJS | WebSocket | MERN | NGINX | Kafka | Redis",
+    year: "2024",
+  },
 ];
