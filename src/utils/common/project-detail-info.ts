@@ -214,4 +214,31 @@ export const ProjectDetailInfo = [
       },
     ],
   },
+  {
+    mainImage:
+      "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723908433/What_is_the_Difference_Between_Relational_and_Nonrelational_Database_-_Pediaa_Com_mifygm.jpg",
+    videos: [
+      "https://framerusercontent.com/images/0L4ByzyLonZaaYGw9F7w0kkuEo.gif",
+    ],
+    name: "Redis-GO",
+    description:
+      "Distributed Key-Value Store: Lightweight, Resilient, and Synchronized",
+    summary:
+      "Built a key-value store similar to Redis with essential commands and a master-slave architecture, ensuring real-time synchronization and fault tolerance across all nodes.",
+    gitLink: "https://github.com/yash7xm/redis-go.git",
+    webLink: "/",
+    techStack: ["Golang, RESP, Distributed, Master-Replica, Database, In-Mem"],
+    projectInfo: [
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723908072/Portfolio_7_q2rjze.png",
+        head: "Architecture",
+        body: [
+          "I developed a key-value store similar to Redis, implementing fundamental commands such as PING, ECHO, SET, and GET. The system was designed to efficiently handle data storage and retrieval, making it a lightweight and versatile tool for managing key-value pairs.",
+          "To ensure data reliability and consistency across multiple nodes, I implemented a master-slave architecture. In this setup, all slave nodes initiate a handshake with the master node upon connection, establishing a reliable communication channel. The slaves remain in constant synchronization with the master, mirroring all data and ensuring consistency across the network. This architecture allows for high availability and fault tolerance, as slave nodes can take over in the event of a master node failure.",
+          "The project showcases my ability to design distributed systems, implement essential data storage commands, and ensure robust data synchronization across multiple nodes.",
+        ],
+      },
+    ],
+  },
 ];

@@ -34,4 +34,13 @@ export const projectCardInfo = [
       "React | Mongo DB | TypeScript | NodeJS | ExpressJS | WebSocket | MERN | NGINX | Kafka | Redis",
     year: "2024",
   },
+  {
+    id: 4,
+    img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723908433/What_is_the_Difference_Between_Relational_and_Nonrelational_Database_-_Pediaa_Com_mifygm.jpg",
+    heading: "Redis-Go",
+    subHeading: "Key Value Store",
+    description:
+      "Golang | RESP | Distributed | Master-Replica | Database | In-Mem",
+    year: "2024",
+  },
 ];
