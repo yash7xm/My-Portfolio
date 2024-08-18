@@ -8,7 +8,11 @@ const Footer = () => {
       <span className={sepratorStyle}>/</span>
       <span className={textStyle}>Linkedin</span>
       <span className={sepratorStyle}>/</span>
-      <span className={textStyle}>Resume</span>
+      <span className={textStyle}>
+        <a href="../../public/yashpoonia.pdf" download="yashpoonia.pdf">
+          Resume
+        </a>
+      </span>
       <span className={sepratorStyle}>/</span>
       <span className={textStyle}>Twitter</span>
     </div>
