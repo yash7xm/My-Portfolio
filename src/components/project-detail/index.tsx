@@ -13,7 +13,7 @@ const ProjectDetailComponent = () => {
     <div className="scroll-style overflow-y-scroll p-3 h-full">
       {/* main image */}
       <div className="h-2/5 md:h-3/5 sm:max-md:h-4/5 lg:h-full w-full flex items-center justify-center dark:bg-secondary-bg bg-[#33333312] rounded-md">
-        <div className="size-4/5 rounded-md">
+        <div className="size-4/5 rounded-md border-2">
           <img
             className="rounded-md size-full"
             src={data[idx].mainImage}

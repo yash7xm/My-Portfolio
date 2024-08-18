@@ -1,5 +1,22 @@
 export const projectCardInfo = [
   {
+    id: 1,
+    img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700377042/img_afztvh.png",
+    heading: "Vyzon",
+    subHeading: "Programming Language",
+    description: "Interpreter | Tokenizer | Parser | Code Generator",
+    year: "2023",
+  },
+  {
+    id: 5,
+    img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.41.55_PM_hklaki.jpg",
+    heading: "Seating Map",
+    subHeading: "Advanced Drawing Interface",
+    description:
+      "React | JavaScript | Fabric.js | Booking | Advanced Drawing Tool",
+    year: "2024",
+  },
+  {
     id: 0,
     img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1708688629/flights_bnjuqh.jpg",
     heading: "Flights",
@@ -7,14 +24,6 @@ export const projectCardInfo = [
     description:
       "Microservices | SQL Transactions | Cron Jobs | Idempotency Keys | Message Queue | Docker | AWS",
     year: "2024",
-  },
-  {
-    id: 1,
-    img: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700377042/img_afztvh.png",
-    heading: "Vyzon",
-    subHeading: "Programming Language",
-    description: "Interpreter | Tokenizer | Parser | Code Generator",
-    year: "2023",
   },
   {
     id: 2,

@@ -87,8 +87,8 @@ export const ProjectDetailInfo = [
       "IS A VERSATILE AND CUSTOM-TAILORED PROGRAMMING LANGUAGE DESIGNED TO PROVIDE CODERS WITH THE FREEDOM TO SHAPE THEIR CODING EXPERIENCES.",
     summary:
       "Designed a custom programming language, built an interpreter, and developed language-processing tools, showcasing language development expertise.",
-    gitLink: "/",
-    webLink: "/",
+    gitLink: "https://github.com/yash7xm/Vyzon",
+    webLink: "https://vyzon.netlify.app/",
     techStack: [
       "JavaScript, React, Interpreter, Tokenizer, Parser, Code Generator",
     ],
@@ -146,8 +146,8 @@ export const ProjectDetailInfo = [
       "Scalable Microservice Architecture for Seamless User Experience",
     summary:
       "A microservice-based flight booking system with secure APIs, efficient booking management, real-time flight data, and automated customer notifications for a seamless user experience.",
-    gitLink: "/",
-    webLink: "/",
+    gitLink: "https://github.com/yash7xm/Flights_Service",
+    webLink: "https://github.com/yash7xm/Flights_Booking_Service",
     techStack: [
       "Microservices, SQL Transactions, Cron Jobs, Idempotency Keys, Message Queue, Docker, AWS",
     ],
@@ -237,6 +237,59 @@ export const ProjectDetailInfo = [
           "I developed a key-value store similar to Redis, implementing fundamental commands such as PING, ECHO, SET, and GET. The system was designed to efficiently handle data storage and retrieval, making it a lightweight and versatile tool for managing key-value pairs.",
           "To ensure data reliability and consistency across multiple nodes, I implemented a master-slave architecture. In this setup, all slave nodes initiate a handshake with the master node upon connection, establishing a reliable communication channel. The slaves remain in constant synchronization with the master, mirroring all data and ensuring consistency across the network. This architecture allows for high availability and fault tolerance, as slave nodes can take over in the event of a master node failure.",
           "The project showcases my ability to design distributed systems, implement essential data storage commands, and ensure robust data synchronization across multiple nodes.",
+        ],
+      },
+    ],
+  },
+  {
+    mainImage:
+      "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.41.55_PM_hklaki.jpg",
+    videos: [
+      "https://framerusercontent.com/images/0L4ByzyLonZaaYGw9F7w0kkuEo.gif",
+    ],
+    name: "Seating Map",
+    description:
+      "Advanced Seating Map Generator with Integrated Ticketing and Sales Tracking",
+    summary:
+      "I developed a seating map generator with advanced object manipulation, seating section customization, and integrated ticketing functionalities, allowing users to design, save, and manage detailed venue layouts efficiently. The project includes features for shape creation, ticket assignment, and a sales mode that visually represents sold-out tickets.",
+    gitLink: "/",
+    webLink: "https://seating-map-latest.vercel.app/",
+    techStack: ["React, JavaScript, Fabric.js, Booking, Advanced Drawing Tool"],
+    projectInfo: [
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.45.33_PM_1_sf5wvt.jpg",
+        head: "Object Manipulation and Grouping",
+        body: [
+          "During my internship, I developed a comprehensive seating map generator that enables users to manipulate objects with ease. Users can zoom in and out, move, add, delete, and edit objects, including rotating, resizing, changing colors, and naming them. The interface supports the selection of multiple objects by drawing a rectangle with the mouse, and users can also copy, paste, group, and ungroup these selected objects. These features ensure flexibility in arranging and customizing the seating map, providing a user-friendly experience for designing complex layouts.",
+          "To enhance usability, I implemented functionality to save the map with a specific name, allowing users to easily load previously saved maps. The seating section feature was particularly intricate, as it involved creating a group of objects that includes both seats and a section name. Seats themselves are grouped with seat numbers and circles, offering a visually organized and easily manipulable object. The system allows for the seamless application of changes, like adjusting the number of rows, seats per row, and seat gaps, directly to the seating section on the map.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.41.55_PM_2_mdmwmx.jpg",
+        head: "Seating Section Customization",
+        body: [
+          "One of the key features of this project was the ability to customize seating sections. Users can generate default seating sections, which can then be manipulated to fit the desired layout. Each section can be customized in terms of rows, seats per row, seat size, and gaps between seats. Moreover, I integrated an arc design feature, which allows users to create a curved seating arrangement by adjusting parameters such as arc degrees and arc radius. This flexibility in design makes the tool adaptable for various venue layouts, from simple to complex seating arrangements.",
+          "Additionally, the system supports advanced seating customization, such as naming conventions that automatically apply to all seats within a section. For example, seat names can include the section name and row number, like 'SectionA-C-34' or 'SectionA-34'. This feature ensures consistency across the map and helps users quickly identify and manage individual seats. The ability to remove specific seats from a section while keeping the section intact was also a critical requirement that I successfully implemented.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.45.33_PM_vplsnh.jpg",
+        head: "Shape Creation and Labeling",
+        body: [
+          "In this project, I extended the functionality to include the creation and manipulation of various shapes. Users can choose from basic shapes, such as squares and rectangles, or draw freehand closed shapes using straight lines. These shapes can be resized, repositioned, rotated, and labeled with a text name that is centered within the shape. Additionally, users can assign a ticket type to any shape, linking it to specific ticketing options within the system. This versatility in shape creation allows for detailed and customizable map designs that cater to diverse venue layouts.",
+          "The free drawing tool was particularly challenging, as it required implementing a way for users to close a shape by connecting the last point to the starting point, thereby creating a closed area. This feature is essential for defining custom areas within the map that do not conform to standard shapes. The ability to label these areas and assign ticket types adds a level of detail and functionality that enhances the overall usability of the seating map generator.",
+        ],
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/dgl5jcwgb/image/upload/v1723987376/WhatsApp_Image_2024-08-18_at_6.41.56_PM_hndiof.jpg",
+        head: "Ticketing and Sales Modes",
+        body: [
+          "A crucial aspect of the project was integrating ticketing functionalities within the seating map. Users can assign ticket types to objects on the map, which are then saved in a separate table linked to the current event. This system allows for flexible ticket assignment, enabling different ticket types for various sections, seats, or shapes. For table objects, users can define the number of seats and set parameters for the minimum and maximum number of tickets that can be purchased, further enhancing the ticketing system's adaptability.",
+          "The sales mode, implemented on the event page, allows users to view available tickets by clicking on seats, shapes, or other objects. This mode combines data from three API responses: the map details, ticket assignment mappings, and sold-out tickets information. I developed a system to gray out and disable sold-out seats or areas on the map, ensuring users have a clear visual representation of ticket availability. This mode locks all objects, preventing any accidental modifications and ensuring that the map accurately reflects the current ticket sales status.",
         ],
       },
     ],
