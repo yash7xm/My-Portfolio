@@ -125,7 +125,7 @@ export const ProjectDetailInfo = [
             },
             {
                 type: "image",
-                url: "../../public/vyzon/vyzon_docs.jpeg",
+                url: "/public/vyzon/vyzon_docs.jpeg",
                 head: "DOCUMENTATION",
                 body: [
                     "The documentation for the language is meticulously crafted to guide users through its features and capabilities, ensuring they can effectively leverage the language for their programming needs. It provides a comprehensive overview of the language's syntax, semantics, and usage patterns, enabling both newcomers and experienced developers to quickly get up to speed.",
@@ -135,7 +135,7 @@ export const ProjectDetailInfo = [
             },
             {
                 type: "image",
-                url: "../../public/vyzon/vyzon_playground.jpeg",
+                url: "/public/vyzon/vyzon_playground.jpeg",
                 head: "PLAYGROUND",
                 body: [
                     "The Vyzon Playground is an interactive environment where users can freely explore the capabilities of the language. This dynamic space allows developers to write and execute Vyzon code directly in their browser, offering immediate feedback on how the code performs. Whether you’re testing basic syntax or experimenting with advanced features like functions and control flow, the Playground makes it easy to quickly prototype and refine code, making it an ideal tool for both learning and fast iterations.",
